@@ -15,11 +15,11 @@ var JWTKEY []byte
 // Loading environment variable JWTKEY which is the secret to used for encoding the JWT
 // GO init function will load when the program is ran and run this automatically
 func init() {
-	err := godotenv.Load()
+	var err error = godotenv.Load()
 	if err != nil {
 		log.Fatalf("Error loading .env file: %v", err)
 	}
-	jwtSecret := os.Getenv("JWT")
+	var jwtSecret string = os.Getenv("JWT")
 	if jwtSecret == "" {
 		log.Fatalf("JWT environment variable not set")
 	}
@@ -43,7 +43,7 @@ func CreateJWT(username string) string {
 		s string
 	)
 
-	now := time.Now()
+	var now time.Time = time.Now()
 	t = jwt.NewWithClaims(jwt.SigningMethodHS256, jwt.MapClaims{
 		"iss":      "seismicstudios",
 		"username": username,
@@ -61,7 +61,6 @@ func CreateJWT(username string) string {
 }
 
 func VerifyToken(token string) (*jwt.Token, bool) {
-
 	parsedToken, _ := jwt.Parse(token, parseToken)
 	if !parsedToken.Valid {
 		return nil, false

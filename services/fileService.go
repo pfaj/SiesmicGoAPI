@@ -13,11 +13,13 @@ import (
 var ProjectList []models.Project
 var UserList []models.User
 
-// PUBLIC FUNCTIONS //
-func OpenFiles() {
+// Initialize the project and users
+func init() {
 	openProjectFile()
 	openUserFile()
 }
+
+// PUBLIC FUNCTIONS //
 
 func AddProject(project models.Project) {
 	ProjectList = append(ProjectList, project)

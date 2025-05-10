@@ -68,7 +68,7 @@ func UploadProject(c *gin.Context) {
 	var projectLink string = c.PostForm("projectLink")
 
 	// initialize the projectstills
-	projectStills := []string{}
+	var projectStills []string = []string{}
 
 	// Intake Multipart form
 	form, err := c.MultipartForm()
@@ -81,7 +81,7 @@ func UploadProject(c *gin.Context) {
 	files := form.File["projectStills"]
 
 	for _, file := range files {
-		filename := filepath.Base(file.Filename)
+		var filename string = filepath.Base(file.Filename)
 
 		projectStills = append(projectStills, filename)
 
@@ -176,6 +176,7 @@ func EditProject(c *gin.Context) {
 
 	if projectIndex != -1 {
 		ProjectList[projectIndex] = *existingProject
+		writeProjectFile()
 	}
 
 	c.IndentedJSON(http.StatusOK, gin.H{"message": "Project with updated."})

@@ -10,8 +10,8 @@ import (
 	"net/http"
 )
 
-var router = gin.Default()
-var limiter = rate.NewLimiter(1, 5)
+var router *gin.Engine = gin.Default()
+var limiter *rate.Limiter = rate.NewLimiter(1, 5)
 
 func Run() {
 	// Adding a rete limiter to the entire API so that it cannot be over loaded
@@ -30,7 +30,7 @@ func Run() {
 func getRouters() {
 	// Added routes to v1 extenstion
 	// Ex. /v1/projects
-	v1 := router.Group("/v1")
+	var v1 *gin.RouterGroup = router.Group("/v1")
 	addProjectRoutes(v1)
 	addUserRoutes(v1)
 }
@@ -48,7 +48,7 @@ func rateLimiter(c *gin.Context) {
 
 func authenticateMiddleware(c *gin.Context) {
 	// Retrieve the token from the cookie
-	tokenString := c.GetHeader("Authorization")
+	var tokenString string = c.GetHeader("Authorization")
 	if tokenString == "" {
 		fmt.Println("Token missing in header")
 		c.Abort()
@@ -66,6 +66,7 @@ func authenticateMiddleware(c *gin.Context) {
 	// Continue with the next middleware or route handler
 	c.Next()
 }
+
 func applyCors(c *gin.Context) {
 	c.Writer.Header().Set("Access-Control-Allow-Origin", "*")
 	c.Writer.Header().Set("Access-Control-Allow-Methods", "POST, GET, OPTIONS, PUT, DELETE")

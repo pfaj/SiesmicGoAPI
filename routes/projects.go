@@ -8,7 +8,7 @@ import (
 )
 
 func addProjectRoutes(rg *gin.RouterGroup) {
-	projects := rg.Group("/projects")
+	var projects *gin.RouterGroup = rg.Group("/projects")
 	projects.GET("/", controllers.GetProjects)
 	projects.PUT("/:id", authenticateMiddleware, controllers.EditProject)
 	projects.GET(":id", controllers.GetProjectByID)

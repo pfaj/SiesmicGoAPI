@@ -20,7 +20,7 @@ func AuthUser(c *gin.Context) {
 		if UserList[i].Username == parsed.Username {
 			var user models.User = UserList[i]
 			// Compares the input password the stored hashed password
-			hashMatch := CheckPasswordHash(parsed.Password, user.Password)
+			var hashMatch bool = CheckPasswordHash(parsed.Password, user.Password)
 
 			if hashMatch {
 				// we will prepare a JSON Web Token to return to the user

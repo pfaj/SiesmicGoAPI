@@ -8,6 +8,6 @@ import (
 )
 
 func addUserRoutes(rg *gin.RouterGroup) {
-	projects := rg.Group("/auth")
-	projects.POST("/", controllers.AuthUser)
+	var auth *gin.RouterGroup = rg.Group("/auth")
+	auth.POST("/", controllers.AuthUser)
 }
