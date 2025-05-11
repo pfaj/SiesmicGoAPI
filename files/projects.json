@@ -1,1 +1,105 @@
-[{"id":1,"projectTitle":"Down Down Down","clientName":"Drwzzy","category":"Music Video","projectStills":["images/stills/downdowndown/1.png","images/stills/downdowndown/2.png","images/stills/downdowndown/3.png","images/stills/downdowndown/4.png","images/stills/downdowndown/5.png","images/stills/downdowndown/6.png","images/stills/downdowndown/7.png","images/stills/downdowndown/8.png"],"description":"Music video for Drwzzy.","projectLink":""},{"id":2,"projectTitle":"Down Down Down","clientName":"Drwzzy","category":"Music Video","projectStills":["images/stills/downdowndown/1.png","images/stills/downdowndown/2.png","images/stills/downdowndown/3.png","images/stills/downdowndown/4.png","images/stills/downdowndown/5.png","images/stills/downdowndown/6.png","images/stills/downdowndown/7.png","images/stills/downdowndown/8.png"],"description":"Music video for Drwzzy.","projectLink":""},{"id":3,"projectTitle":"Down Down Down","clientName":"Drwzzy","category":"Music Video","projectStills":["images/stills/downdowndown/1.png","images/stills/downdowndown/2.png","images/stills/downdowndown/3.png","images/stills/downdowndown/4.png","images/stills/downdowndown/5.png","images/stills/downdowndown/6.png","images/stills/downdowndown/7.png","images/stills/downdowndown/8.png"],"description":"Music video for Drwzzy.","projectLink":""},{"id":4,"projectTitle":"Down Down Down","clientName":"Drwzzy","category":"Music Video","projectStills":["images/stills/downdowndown/1.png","images/stills/downdowndown/2.png","images/stills/downdowndown/3.png","images/stills/downdowndown/4.png","images/stills/downdowndown/5.png","images/stills/downdowndown/6.png","images/stills/downdowndown/7.png","images/stills/downdowndown/8.png"],"description":"Music video for Drwzzy.","projectLink":""}]
+[
+  {
+    "id": 1,
+    "projectTitle": "Down Down Down",
+    "clientName": "Drwzzy",
+    "category": "Music Video",
+    "projectStills": [
+      "images/stills/downdowndown/1.png",
+      "images/stills/downdowndown/2.png",
+      "images/stills/downdowndown/3.png",
+      "images/stills/downdowndown/4.png",
+      "images/stills/downdowndown/5.png",
+      "images/stills/downdowndown/6.png",
+      "images/stills/downdowndown/7.png",
+      "images/stills/downdowndown/8.png"
+    ],
+    "description": "Music video for Drwzzy.",
+    "projectLink": ""
+  },
+  {
+    "id": 2,
+    "projectTitle": "Down Down Down",
+    "clientName": "Drwzzy",
+    "category": "Music Video",
+    "projectStills": [
+      "images/stills/downdowndown/1.png",
+      "images/stills/downdowndown/2.png",
+      "images/stills/downdowndown/3.png",
+      "images/stills/downdowndown/4.png",
+      "images/stills/downdowndown/5.png",
+      "images/stills/downdowndown/6.png",
+      "images/stills/downdowndown/7.png",
+      "images/stills/downdowndown/8.png"
+    ],
+    "description": "Music video for Drwzzy.",
+    "projectLink": ""
+  },
+  {
+    "id": 3,
+    "projectTitle": "Down Down Down",
+    "clientName": "Drwzzy",
+    "category": "Music Video",
+    "projectStills": [
+      "images/stills/downdowndown/1.png",
+      "images/stills/downdowndown/2.png",
+      "images/stills/downdowndown/3.png",
+      "images/stills/downdowndown/4.png",
+      "images/stills/downdowndown/5.png",
+      "images/stills/downdowndown/6.png",
+      "images/stills/downdowndown/7.png",
+      "images/stills/downdowndown/8.png"
+    ],
+    "description": "Music video for Drwzzy.",
+    "projectLink": ""
+  },
+  {
+    "id": 4,
+    "projectTitle": "Down Down Down",
+    "clientName": "Drwzzy",
+    "category": "Music Video",
+    "projectStills": [
+      "images/stills/downdowndown/1.png",
+      "images/stills/downdowndown/2.png",
+      "images/stills/downdowndown/3.png",
+      "images/stills/downdowndown/4.png",
+      "images/stills/downdowndown/5.png",
+      "images/stills/downdowndown/6.png",
+      "images/stills/downdowndown/7.png",
+      "images/stills/downdowndown/8.png"
+    ],
+    "description": "Music video for Drwzzy.",
+    "projectLink": ""
+  },
+  {
+    "id": 5,
+    "projectTitle": "test",
+    "clientName": "test",
+    "category": "Commercial",
+    "projectStills": [
+      "../images/stills/test/still_1.png"
+    ],
+    "description": "fekhsfkjhfdsjfkej",
+    "projectLink": ""
+  },
+  {
+    "id": 9,
+    "projectTitle": "Learn Language Project",
+    "clientName": "Elon University",
+    "category": "Training/Educational",
+    "projectStills": [
+      "../images/stills/test/still_1.png"
+    ],
+    "description": "Project for Programming Languages",
+    "projectLink": "https://google.com"
+  },
+  {
+    "id": 7,
+    "projectTitle": "Test",
+    "clientName": "test",
+    "category": "Commercial",
+    "projectStills": [],
+    "description": "This is a test post of a project",
+    "projectLink": ""
+  }
+]
